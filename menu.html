@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My double suicide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+    </style>    
+    <style>
+        body {
+            background-image: url('soukoku.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Handlee, serif;
+        }
+
+        .button {
+            width: 150px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color:   #bca38c;
+            border: 2px solid   #5e3c09;
+            border-radius: 5px;
+            color: #5e3c09;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color:     #6c5c4c;
+            color: #2b2b2b;
+            transform: scale(1.1);
+        }
+
+
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            gap:10px;
+        }
+
+        .music-button {
+            width: 100px;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 22px;
+            background-color: #bca38c;
+            border: 2px solid #5e3c09;
+            border-radius: 5px;
+            color: #5e3c09;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .music-button:hover {
+            background-color: #6c5c4c;
+            color: #2b2b2b;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <center><h3 style="font-family: Handlee, serif; font-size: 26px;">⚝  ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒ ── ⚝ ── ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒ ⚝ ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒── ⚝ ── ⭒ ─ ⭑ ─ ⭒ ──  ⭒ ─ ⭑ ─ ⭒ ⚝</h3></center>
+    <center><p style="font-size: 46px;"><b>My double suicide</b></p></center>
+    <center><p style="font-size: 26px;"><b>╭────── · · ୨୧ · · ──────╮</b></p></center>
+    <center><a href="letter.html" class="button">Letters for you</a></center> <br>
+    <center><a href="https://open.spotify.com/playlist/6yCyzEgaxTqIWNBjrbGMVv?si=1321070cb0f24ef0&pt=c02df3b9a6819935df5050cc34a86210" class="button">≽^•⩊•^≼</a></center> <br>
+    <center><a href="gifts.html" class="button">Gifts for you</a></center>
+    <center><p style="font-size: 26px;"><b>╰────── · · ୨୧ · · ──────╯</b></p></center>
+
+    <div class="button-container">
+        <button style="font-family: Handlee, serif; font-size: 20px;" class="music-button" id="playMusicButton">Play</button>
+        <button style="font-family: Handlee, serif; font-size: 20px;" class="music-button" id="stopMusicButton">Stop</button>
+    </div>
+
+    <script>
+        const playMusicButton = document.getElementById('playMusicButton');
+        const stopMusicButton = document.getElementById('stopMusicButton');
+        const audio = new Audio('Partners in Crime (feat. Ash Costello).mp3');
+
+        playMusicButton.addEventListener('click', () => {
+            audio.play();
+        });
+
+        stopMusicButton.addEventListener('click', () => {
+            audio.pause();
+            audio.currentTime = 0;
+        });
+    </script>
+<br>
+<center><h3 style="font-family: Handlee, serif; font-size: 26px;">⚝  ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒ ── ⚝ ── ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒ ⚝ ⭒ ─ ⭑ ─ ⭒ ── ⭒ ─ ⭑ ─ ⭒── ⚝ ── ⭒ ─ ⭑ ─ ⭒ ──  ⭒ ─ ⭑ ─ ⭒ ⚝</h3></center>
+</body>
+</html>
